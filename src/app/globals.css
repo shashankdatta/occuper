@@ -14,12 +14,12 @@
     #16abff33 0deg,
     #0885ff33 55deg,
     #54d6ff33 120deg,
-    #0071ff33 160deg,
+    #cd861d33 160deg,
     transparent 360deg
   );
   --secondary-glow: radial-gradient(
     rgba(255, 255, 255, 1),
-    rgba(255, 255, 255, 0)
+    rgba(208, 116, 25, 0.558)
   );
 
   --tile-start-rgb: 239, 245, 249;
