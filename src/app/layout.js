@@ -1,14 +1,14 @@
-import './globals.css'
+import NavBar from "../components/layout/NavBar";
+import classes from "./page.module.css";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
       <head />
-      <body>{children}</body>
+      <body>
+        <NavBar />
+        <main className={classes.main}>{children}</main>
+      </body>
     </html>
-  )
+  );
 }
