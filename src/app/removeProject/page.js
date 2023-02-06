@@ -6,7 +6,7 @@
 // import { useRouter } from "next/navigation";
 
 export default function Page() {
-  const router = useRouter();
+  // const router = useRouter();
 
   function addProjectHandler(projectData) {
     // fetch("http://localhost:5000/record/add", {
