@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function NavBar() {
   return (
     <header className={classes.header}>
-      <div className={classes.logo}> React Meetups</div>
+      <div className={classes.logo}> Occuper </div>
       <nav>
         <ul>
           <li>
