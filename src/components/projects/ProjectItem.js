@@ -1,7 +1,6 @@
 import Card from "../ui/Card";
 import classes from "./ProjectItem.module.css";
-// import { useContext } from "react";
-// import FavoritesContext from "../../store/favorites-context";
+import Image from "next/image";
 
 {
   /* <ProjectItem
@@ -46,7 +45,7 @@ function ProjectItem(props) {
     <li className={classes.item}>
       <Card>
         <div className={classes.image}>
-          <img src={props.image} alt={props.title}></img>
+          <Image src={props.image} alt={props.title}></Image>
         </div>
         <div className={classes.content}>
           <h3>{props.title}</h3>
