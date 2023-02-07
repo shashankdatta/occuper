@@ -1,3 +1,4 @@
+import "./global.css";
 import NavBar from "../components/layout/NavBar";
 import classes from "./page.module.css";
 

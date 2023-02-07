@@ -1,15 +1,21 @@
 import { Inter } from "@next/font/google";
 import ProjectList from "../components/projects/ProjectList";
+// import { use } from "react";
+// import axios from "axios";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default async function Home() {
+async function getProjects() {
   const response = await fetch(
     `${process.env.NEXT_PUBLIC_BASE_URL}/api/allProjects`
   );
-  // convert the response to json and get "data" field from it (see api/allProjects.js)
+
   const data = await response.json();
-  const loadedProjects = data.data;
+  return data.data;
+}
+
+export default async function Page() {
+  let loadedProjects = await getProjects();
 
   return (
     <section>

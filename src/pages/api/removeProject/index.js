@@ -1,4 +1,4 @@
-import clientPromise from "../../../lib/db/conn";
+import clientPromise from "../../../../lib/db/conn";
 const ObjectId = require("mongodb").ObjectId;
 
 export default async function handler(req, res) {
