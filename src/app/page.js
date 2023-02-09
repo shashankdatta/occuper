@@ -15,7 +15,6 @@ async function getProjects() {
   const data = await response.json();
   return data.data;
 }
-// Lol
 
 export default async function Page() {
   let loadedProjects = await getProjects();
