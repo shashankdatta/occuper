@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import { Inter } from "@next/font/google";
 import ProjectList from "../components/projects/ProjectList";
 // import { use } from "react";
